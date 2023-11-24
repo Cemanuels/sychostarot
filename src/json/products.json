@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Conselho diário",
+    "description": "Um conselho espiritual para se refletir e praticar a partir da energia de uma única carta",
+    "price": 7.00
+  },
+  {
+    "title": "Conselho semanal",
+    "description": "Um conselho espiritual para se refletir e praticar a partir da energia de uma única carta",
+    "price": 10.00
+  },
+  {
+    "title": "Conselho mensal",
+    "description":"Um conselho espiritual para se refletir e praticar a partir da energia de uma única carta",
+    "price": 13.00
+  },
+  {
+    "title": "Questões objetivas",
+    "description": "Tiragem de 2 cartas sobre uma questão objetiva. Ex: como melhorar? O que fazer? O que está atrapalhando? Pra qual caminho está indo? Quais as perspectivas? Qual o maior desafio?",
+    "prices": [7.00, 12.00, 17.00]
+  },
+  {
+    "title": "Consulta completa",
+    "description": "Iniciamos o atendimento com uma análise geral do seu momento atual, logo após abrirmos espaço para perguntas (dois a três temas, dependendo do tempo que teremos dentro da consulta).",
+    "prices": [30.00, 60.00]
+  },
+  {
+    "title": "Análise de situação",
+    "description": "Caso haja uma situação que precise ser analisada. Nela, teremos um jogo de 4 cartas: a primeira irá representar você, a segunda sobre a situação em si, a terceira o desafio nessa questão e a quarta carta mostra o que se fazer para que seja resolvido.",
+    "price": 23.00
+  },
+  {
+    "title": "Analise de relação",
+    "description": "Uma tiragem simples de 3 cartas que serve para analisar um relacionamento, seja ele amoroso, de amizade, família... qualquer que seja, trazendo aconselhamentos.",
+    "price": 20.00
+  }
+]

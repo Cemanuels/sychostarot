@@ -1,0 +1,26 @@
+$lillac: #D0B2FE;
+$purple: #8C52FF;
+$blue: #3F08AC;
+
+.container {
+  display: flex;
+  background-color: $lillac;
+  border-radius: 28px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 32px;
+
+  .input {
+    margin-left: 12px;
+    width: 100%;
+    outline: none;
+    border:none;
+    background: none;
+    font-size: 16px;
+
+    &::placeholder {
+      color: $blue;
+      opacity: 1;
+    }
+  }
+}
