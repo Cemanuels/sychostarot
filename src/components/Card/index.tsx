@@ -7,11 +7,18 @@ interface CardProps {
   image?: string
   title?: string;
   description?: string;
+  onClick?: (props: Omit<CardProps, 'onClick'>) => void;
 }
 
-export function Card({ image = CardTarotImg, title = 'Leitura Simples', description = 'leitura direta.' }: CardProps) {
+export function Card({ image = CardTarotImg, title = 'Leitura Simples', description = 'leitura direta.', onClick }: CardProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const rippleRef = useRef<any>(null)
+
+  const handleClickCard = () => {
+    if (onClick) {
+      onClick({ title, description, image })
+    }
+  }
 
   const onRippleStart = (e: unknown) => {
     rippleRef.current.start(e);
@@ -21,13 +28,12 @@ export function Card({ image = CardTarotImg, title = 'Leitura Simples', descript
   };
 
   return (
-    <div onMouseDown={onRippleStart} onMouseUp={onRippleStop} className={styled.container}>
+    <div onMouseDown={onRippleStart} onMouseUp={onRippleStop} className={styled.container} onClick={handleClickCard}>
       <img src={image} alt={title} height="68px" width="68px" />
 
       <div className={styled.container_description}>
         <span className={styled.title}>{title}</span>
         <br />
-        <span className={styled.description}>{description}</span>
 
       </div>
       <TouchRipple ref={rippleRef} />

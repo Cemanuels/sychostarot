@@ -49,12 +49,17 @@ $lillac: #D0B2FE;
   
   }
   
-  .container_cards {
+  .container_body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     padding: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
     overflow-y: scroll;
+
+    .container_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
   }
 }

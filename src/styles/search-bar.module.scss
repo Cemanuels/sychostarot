@@ -10,17 +10,25 @@ $blue: #3F08AC;
   padding-bottom: 18px;
   padding-left: 32px;
 
-  .input {
-    margin-left: 12px;
-    width: 100%;
-    outline: none;
-    border:none;
-    background: none;
-    font-size: 16px;
-
-    &::placeholder {
-      color: $blue;
-      opacity: 1;
+  img {
+    &:hover {
+      cursor: pointer
     }
+  }
+}
+
+
+ #search_bar_input {
+  margin-left: 12px;
+  width: 100%;
+  outline: none;
+  border:none;
+  background: none;
+  font-size: 16px;
+  height: 100%;
+
+  &::placeholder {
+    color: $blue;
+    opacity: 1;
   }
 }
